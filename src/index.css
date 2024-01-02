@@ -1,14 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,700;1,900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,500;1,900&family=Rubik+Doodle+Shadow&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    -font-family-1: 'Kanit', sans-serif;
-    -font-family-2: 'Poppins', sans-serif;
-    -font-family-3: 'Roboto', sans-serif;
-}
 /* 
 font-family: 'Kanit', sans-serif;
 font-family: 'Pacifico', cursive;
@@ -17,9 +11,33 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Rubik ', sans-serif;
  */
 
- .text-hov-icon{
-    @apply hover:text-yellow-400
- }
- .bg-hov{
-    @apply hover:bg-yellow-700 bg-yellow-200 text-black font-bold
- }
+.text-hov-icon {
+  @apply hover:text-yellow-400;
+}
+.bg-hov {
+  @apply hover:bg-yellow-700 bg-yellow-200 text-black font-bold;
+}
+.bg-brand {
+  background: #f9cc38fd;
+}
+.header-color {
+  background: #15191e;
+}
+.ff-R{
+   font-family: 'Roboto', sans-serif;
+}
+.dark-ss{
+  background: #1b1b1b;
+}
+.card-hov{
+  @apply hover:backdrop-blur-md hover:shadow-lg transition ease-in-out duration-300
+}
+
+.smallMenuList {
+transform: translateX(-100%);
+transition: all .3s ease-in-out;
+}
+
+.hover_over_smallMenuList:hover .smallMenuList {
+  transform: translateX(0);
+}

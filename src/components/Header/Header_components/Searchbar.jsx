@@ -12,10 +12,10 @@ const mouseEnter =(e)=>{
 
   return (
  
-      <form action="" className={`flex  rounded-lg overflow-hidden sm:w-[100%] lg:w-[50%]   w-full ${toggle ?"bg-violet-600 ":""}p-1`}>
+      <form action="" className={`flex  rounded-lg overflow-hidden sm:w-[100%] lg:w-[50%]   w-full ${toggle ?"bg-yellow-600 ":""}p-1`}>
         <input
           type="text"
-          className="  p-2 w-full rounded-s outline-none border-none "
+          className="  p-2 w-full rounded-s outline-none border-none text-black"
           placeholder="Search..."
           onFocus={()=>{setToggle(!toggle)}}
           

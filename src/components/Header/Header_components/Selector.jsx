@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-function Selector({ items, defaultval }) {
+function Selector({ items, defaultval,className }) {
+
 
   const [getval,setval]=useState('');
   const selectorValue = (e) => {
@@ -10,11 +11,11 @@ function Selector({ items, defaultval }) {
 
   return (
     <select
-      className="select select-bordered select-xs w-full max-w-xs"
+      className={`${className} select select-bordered select-xs w-full max-w-xs text-black`}
       onChange={selectorValue}
       value={getval}
     >
-      <option disabled value={defaultval}>
+      <option  value={defaultval}>
         {defaultval}
       </option>
       {items.map((item, i) => {

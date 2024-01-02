@@ -1,12 +1,15 @@
 import React from 'react';
 import { IoIosGitCompare } from 'react-icons/io';
-import { FaRegHeart } from 'react-icons/fa6';
+import { FaHeart } from "react-icons/fa";
 import { FaRegUser } from 'react-icons/fa';
 import { BsCart4 } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 
 function Progressbar({className}) {
+const wishlist ="text-red-600"
+const cartColor ="text-yellow-700"
+
   return (
     <div className={`md:flex md:gap-5 xl:gap-10 ${className} px-5`}>
       <Link className='flex items-center md:gap-2 text-hov-icon'>
@@ -16,7 +19,7 @@ function Progressbar({className}) {
         </p>
       </Link>
       <Link className='flex items-center md:gap-3 text-hov-icon'>
-        <FaRegHeart className='text-md sm:text-xl md:text-2xl lg:text-3xl' />
+        <FaHeart className={`text-md sm:text-xl md:text-2xl lg:text-3xl ${wishlist} `} />
         <p className='flex flex-col items-center justify-center text-sm'>
           Favourite <small>Wishlist</small>
         </p>
@@ -28,7 +31,7 @@ function Progressbar({className}) {
         </p>
       </Link>
       <Link className='flex items-center md:gap-3  text-hov-icon'>
-        <BsCart4 className='text-md sm:text-xl md:text-2xl lg:text-3xl' />
+        <BsCart4 className={`text-md sm:text-xl md:text-2xl lg:text-3xl ${cartColor}`} />
         <p className='flex flex-col items-center justify-center text-sm'>
           Item <small>$100.00</small>
         </p>
