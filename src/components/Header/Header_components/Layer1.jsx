@@ -28,8 +28,7 @@ function Layer1() {
     localStorage.setItem("theme", newTheme);
     applyTheme(newTheme);
   };
-  // change Language and store in localStorage
-  const [getItems,setIems]=useState("");
+
 
 
 
@@ -43,6 +42,7 @@ function Layer1() {
           <Link to={`https://mail.google.com/mail/`} className="hidden sm:block">
             <small>rahulkumar7250883289@gmail.com</small>
           </Link>
+          
           {/* Selector for Language */}
           <Selector items={items1} defaultval={"ENG"} />
           {/* Currency Selector */}

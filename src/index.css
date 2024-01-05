@@ -29,6 +29,7 @@ font-family: 'Rubik ', sans-serif;
 .dark-ss{
   background: #1b1b1b;
 }
+
 .card-hov{
   @apply hover:backdrop-blur-md hover:shadow-lg transition ease-in-out duration-300
 }

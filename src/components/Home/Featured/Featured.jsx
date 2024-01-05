@@ -6,7 +6,8 @@ function Featured() {
 
   return (
     <>
-      <div className=" px-3 sm:px-10 md:py-10 py-5">
+      <div className=" px-3 sm:px-10 py-5">
+      <h3 className=" md:text-lg text-lg font-bold break-words leading-[4rem] lg:text-lg xl:text-3xl pb-5" > Featured Collections</h3>
         <FeaturedCard FeaturedData={FeaturedData} />
       </div>
     </>

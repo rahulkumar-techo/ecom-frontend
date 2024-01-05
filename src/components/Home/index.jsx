@@ -6,17 +6,17 @@ import HomeItemList from "./HomeItemList";
 import Marquee from "./HomeComponents/Marquee/Marquee";
 import Blog from "./HomeComponents/Blog/Blog";
 import Featured from "./Featured/Featured";
+import SpecialProduct from "./SpecialProduct/SpecialProduct";
+import PopularProduct from "./PopularProduct/PopularProduct";
+import FamousProduct from "./FamousProduct/FamousProduct";
 function index() {
-  const scroller = (e) => {
-    // console.log(e.target);
-  };
-  // use same size of images
+
 
   return (
     <>
       <section
         className="py-6  md:pt-[180px] pt-[170px] xs:pt-[110px] overflow-x-hidden"
-        onScroll={scroller}
+      
       >
         <div className=" grid md:grid-cols-2 px-10 md:gap-10 gap-5  grid-cols-1 ">
           <div>
@@ -69,6 +69,10 @@ function index() {
       <Marquee/>
       <Featured/>
       <Blog/>
+      <SpecialProduct/>
+      {/* Popular Products  */}
+      <PopularProduct/>
+      <FamousProduct/>
     </>
   );
 }

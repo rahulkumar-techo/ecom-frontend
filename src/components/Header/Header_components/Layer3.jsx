@@ -8,10 +8,10 @@ import { RiPagesLine } from "react-icons/ri";
 import { MdConnectWithoutContact } from "react-icons/md";
 function Layer3({className}) {
   const info = [
-    { title: "HOME", icon: <IoHomeOutline />, link: "#" },
-    { title: "OUR STORE", icon: <FaStore />, link: "#" },
-    { title: "BLOGS", icon: <RiPagesLine />, link: "#" },
-    { title: "CONTACT", icon: <MdConnectWithoutContact />, link: "#" },
+    { title: "HOME", icon: <IoHomeOutline />, link: "/" },
+    { title: "OUR STORE", icon: <FaStore />, link: "/store" },
+    { title: "BLOGS", icon: <RiPagesLine />, link: "/blogs" },
+    { title: "CONTACT", icon: <MdConnectWithoutContact />, link: "/contact" },
   ];
   const categories = ["Phones", "iphones", "laptops"];
   // functionality

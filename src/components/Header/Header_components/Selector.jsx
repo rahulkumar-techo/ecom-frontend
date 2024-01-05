@@ -11,7 +11,7 @@ function Selector({ items, defaultval,className }) {
 
   return (
     <select
-      className={`${className} select select-bordered select-xs w-full max-w-xs text-black`}
+      className={`${className} select select-bordered select-xs w-full max-w-xs `}
       onChange={selectorValue}
       value={getval}
     >

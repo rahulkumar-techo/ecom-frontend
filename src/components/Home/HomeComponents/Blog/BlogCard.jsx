@@ -2,11 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaBookReader } from "react-icons/fa";
 
-let datas = [];
-console.log(datas);
 
 function BlogCard({ data }) {
-  datas = data;
+ 
   return (
     <div className=" grid grid-cols-2 md:grid-cols-4 gap-5 ">
     {/* data */}

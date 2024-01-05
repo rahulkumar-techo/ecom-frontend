@@ -11,21 +11,23 @@ import { BsCart4 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa6";
 import { IoMdNotifications } from "react-icons/io";
 import { IoMdPerson } from "react-icons/io";
+import { FaStore } from "react-icons/fa";
 import { logo } from "../../../assets";
 // menu
 import { RiMenuUnfoldFill } from "react-icons/ri";
 
 function Mobile({ fnToggler, toggle }) {
   const lists = [
-    { title: "Home", icon: <SiHomebridge />, link: "home" },
-    { title: "About", icon: <IoPerson />, link: "#" },
-    { title: "Blogs", icon: <GrArticle />, link: "#" },
-    { title: "Contact", icon: <MdContacts />, link: "#" },
-    { title: "Coupon", icon: <RiCoupon2Fill />, link: "#" },
-    { title: "My Cart", icon: <BsCart4 />, link: "#" },
-    { title: "My wishlist", icon: <FaRegHeart />, link: "#" },
-    { title: "My Account", icon: <IoMdPerson />, link: "#" },
-    { title: "My notification", icon: <IoMdNotifications />, link: "#" },
+    { title: "Home", icon: <SiHomebridge />, link: "/" },
+    { title: "About", icon: <IoPerson />, link: "/about" },
+    { title: "Blogs", icon: <GrArticle />, link: "/blogs" },
+    { title: "Store", icon: <FaStore />, link: "/store" },
+    { title: "Contact", icon: <MdContacts />, link: "/contact" },
+    { title: "Coupon", icon: <RiCoupon2Fill />, link: "/coupon" },
+    { title: "My Cart", icon: <BsCart4 />, link: "cart" },
+    { title: "My wishlist", icon: <FaRegHeart />, link: "/wishlist" },
+    { title: "My Account", icon: <IoMdPerson />, link: "/account" },
+    { title: "My notification", icon: <IoMdNotifications />, link: "/notification" },
   ];
 
   const categories = ["Phones", "iPhones", "Laptops"];

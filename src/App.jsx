@@ -2,7 +2,13 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./components/Home";
-import { About,Contact } from "./components/DetailsComp";
+import Store from "./pages/Stores";
+import Contact from "./pages/Contact";
+import About from "./pages/About/About";
+import Blogs from "./pages/Blogs"
+import WishlistPage from "./pages/WishlistPage/WishlistPage";
+// import Login from "./pages/LoginPage/Login";
+import Signin from "./pages/SigninPage/Signin";
 
 function App() {
   return (
@@ -10,10 +16,14 @@ function App() {
       <Routes>
         {/* User router */}
         <Route path="/" element={<Layout />}>
-          {/* <Route path="/footer" element={<Hero/>}/> */}
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="store" element={<Store/>} />
+          <Route path="blogs" element={<Blogs/>}/>
+          <Route path="wishlist" element={<WishlistPage/>}/>
+          {/* <Route path="login" element={Login}/> */}
+          <Route path="signin" element={Signin}/>
         </Route>
         {/* Dashboard router*/}
       </Routes>

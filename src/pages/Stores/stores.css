@@ -1,0 +1,11 @@
+
+
+/* .store-hover-over-card{
+@apply xs:block sm:block md:hidden transition delay-100 ease-in-out
+}
+
+.store-card-appears:hover .store-hover-over-card{
+  transform: translateY(0%);
+  display: block;
+  
+} */

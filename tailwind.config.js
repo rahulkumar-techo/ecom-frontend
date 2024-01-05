@@ -13,7 +13,7 @@ export default {
         kanit: ['Kanit', 'sans-serif'],
       },
       screens: {
-        xs:"450px"
+        xs:"350px"
       }
     },
   },

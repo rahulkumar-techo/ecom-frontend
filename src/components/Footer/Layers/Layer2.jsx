@@ -19,14 +19,15 @@ function Layer2() {
         <h2 className=" text-2xl font-bold">Contact Us</h2>
         <ul>
           <li>
-            <Link> Demo Store</Link>
+            <Link to={""}> Demo Store</Link>
             <p className=" flex flex-col">
               Address :<small>Neori , vikas Ranchi jharkhand</small>
               <small>pincode : 835217</small>
               <small> Country : India </small>
               <small>+91-9142684664</small>
+              </p>
               <small className="flex gap-2">
-                {" "}
+                
                 <input
                   type="text"
                   value={"email- rahulkumar7250883289@gmail.com "}
@@ -49,7 +50,7 @@ function Layer2() {
                 </div>
                
               </small>
-            </p>
+           
             <div className=" flex gap-3 text-3xl">
               <Link to={"https://www.twitter.com/rahulkumar_hd"}>
                 <FaSquareXTwitter  />

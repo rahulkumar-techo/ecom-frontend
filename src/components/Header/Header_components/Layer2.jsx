@@ -47,7 +47,7 @@ function Layer2({className}) {
       <Progressbar className="hidden" />
       {/*🧑🧑---------------- user profile or avatar---------------🧑🧑 */}
       <div className="block sm:hidden px-3 text-xl">
-        <Link to={"#"}>
+        <Link to={"/login"}>
           <FaRegUserCircle />
         </Link>
       </div>
